@@ -1,5 +1,4 @@
 # Marketing Analysis Prediction
----
 
 Final Project for Purwadhika Data Scientist Course
 
@@ -44,14 +43,12 @@ Steps that i took for this project are:
  - Deployment with flask
 
 ## Notebook
-___
 This project has 3 notebooks those are:
 1. Exploratory Data Analysis for this dataset
 2. Modeling for campaign prediction
 3. Segmentation for customer segment prediction
 
 ## Dashboard
-___
 Dashboard are made using flask, it consist of 7 pages:
 1. Home
 ![Home Page](/assets/home.png "Home Page")
