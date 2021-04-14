@@ -4,36 +4,23 @@ Final Project for Purwadhika Data Scientist Course
 
 This Repository includes Jupyter Notebooks and Dashboard. The dataset that used in this project could be found [here](https://www.kaggle.com/jackdaoud/marketing-data).
 
-This dataset has 25 features, the features are:
-1. **Marital** Customer's marital status.
-2. **Kidhome** Number of small children in customer's household.
-3. **Teenhome** Number of teenagers in customer's household.
-4. **Education** Customer's level of education
-5. **Income** Customer's yearly household income
-6. **MntWines** Amount spent on wine products in last 2 years.
-7. **MntFruits** Amount spent on fruit products in last 2 years.
-8. **MntMeatProducts** Amount spent on meat products in last 2years.
-9. **MntFishProducts** Amount spent on fish products in last 2 years.
-10. **MntSweetProducts** Amount spent on sweet products in last 2 years.
-11. **MntGoldProds** Amount spent on gold products in last 2 years.
-12. **NumDealsPurchases** Number of purchases made with discount.
-13. **NumCatalogPurchases** Number of purchases made using catalogue.
-14. **NumStorePurchases** Number of purchases made directly in stores.
-15. **NumWebPurchases** Number of purchases made through company's web site.
-16. **NumWebVisitsMonth** Number of visits to company's website in the last month.
-17. **Recency** number of days since the last purchase.
-18. **AcceptedCmp1** 1 if costumer accepter the offer in the 1st campaign, 0 otherwise.
-19. **AcceptedCmp2** 1 if costumer accepter the offer in the 2nd campaign, 0 otherwise.
-20. **AcceptedCmp3** 1 if costumer accepter the offer in the 3rd campaign, 0 otherwise.
-21. **AcceptedCmp4** 1 if costumer accepter the offer in the 4th campaign, 0 otherwise.
-22. **AcceptedCmp5** 1 if costumer accepter the offer in the 5th campaign, 0 otherwise.
-23. **Response** 1 if costumer accepter the offer in the last campaign, 0 otherwise.
-24. **Complain** 1 if costumer complained in the last 2 years.
-25. **DtCustomer** Date of customer's enrollment with the company.
+
+This dataset has 11 features, the features are:
+1. **Marital Status** : Customer's marital status. there are 3 choises (Single, Together and Other)
+2. **Education** : Customer's education level from basic until Phd
+3. **Total Income** : Customer's yearly household income.
+4. **Number of Kidhome** : Number of children in customer's household
+5. **Number of Teenhome** : Number of Teenager in customer's household
+6. **Recency** : Number of days since customer's last purchase (-1 if customer never purchase before)
+7. **Customer Age** : Number of Age Customer
+8. **Country** : Customer location
+9. **Recency** : Time since last order  
+10. **Frequency** : Total number of Customer transactions
+11. **Monetary** : Total transactions value
 
 This project has 2 predictions that are :
-1. **Campaign Prediction** Predict customer would respond to last campaign or not.
-2. **Customer Segment Prediction** Predict customer segment and show an advice what to do for that customer.
+1. **Campaign Prediction** Predict customer would respond to Campaign or not. (for New Customer)
+2. **Customer Segment Prediction** Predict customer segment and show an advice what to do for that customer.(For Old Membership)
 
 Steps that i took for this project are:
  - Exploratory data analysis
@@ -41,6 +28,11 @@ Steps that i took for this project are:
  - Model selections
  - Segmentation
  - Deployment with flask
+
+## Model Selection
+Analysis:
+In this modelling i use precisionn score for model evaluation. Because i wanna avoid False Positive (FP).
+For Modelling I try Logistic Regression, KNN, Decision Tree, Boosting and Balancing Datase. Based on Model evaluation (precision score) the best model is Logistic Regression without balancing so i choose it. 
 
 ## Notebook
 This project has 3 notebooks those are:
